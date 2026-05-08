@@ -46,7 +46,7 @@ const retryPay = () => uni.navigateBack()
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); }
+.page { min-height: 100%; background: var(--color-bg); }
 
 .result-header { text-align: center; padding: 120rpx 48rpx 60rpx; }
 .result-header.success { background: #52c41a; }

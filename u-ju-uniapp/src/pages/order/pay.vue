@@ -88,7 +88,7 @@ onUnmounted(() => clearInterval(timer))
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); }
+.page { min-height: 100%; background: var(--color-bg); }
 
 .pay-header { text-align: center; padding: 60rpx 48rpx 40rpx; background: #1677ff; }
 .ph-title { display: block; font-size: 28rpx; color: rgba(255,255,255,0.8); margin-bottom: 12rpx; }

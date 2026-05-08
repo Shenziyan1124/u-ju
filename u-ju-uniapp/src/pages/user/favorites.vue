@@ -41,7 +41,7 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); }
+.page { min-height: 100%; background: var(--color-bg); }
 .list { padding: 24rpx 32rpx; }
 
 .card {

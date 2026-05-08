@@ -101,7 +101,7 @@ const handleRegister = async () => {
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); padding-bottom: 140rpx; }
+.page { min-height: 100%; background: var(--color-bg); padding-bottom: 140rpx; }
 
 .cover { width: 100%; height: 440rpx; }
 .body { margin-top: -40rpx; position: relative; z-index: 1; border-radius: var(--radius-xl) var(--radius-xl) 0 0; background: var(--color-white); padding: 32rpx; min-height: calc(100vh - 400rpx); }

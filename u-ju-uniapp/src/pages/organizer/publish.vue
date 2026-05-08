@@ -127,7 +127,7 @@ const handlePublish = async () => {
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); display: flex; flex-direction: column; }
+.page { min-height: 100%; background: var(--color-bg); display: flex; flex-direction: column; }
 .section-title { padding: 24rpx 32rpx; font-size: 30rpx; font-weight: 700; color: var(--color-text-1); }
 
 .form-scroll { flex: 1; }

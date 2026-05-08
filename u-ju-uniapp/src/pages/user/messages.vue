@@ -52,7 +52,7 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); padding-bottom: 100rpx; }
+.page { min-height: 100%; background: var(--color-bg); padding-bottom: 100rpx; }
 .list { padding: 24rpx 32rpx; }
 
 .msg-card {

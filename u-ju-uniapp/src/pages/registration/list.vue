@@ -59,7 +59,7 @@ load()
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); }
+.page { min-height: 100%; background: var(--color-bg); }
 
 .tab-scroll { white-space: nowrap; background: var(--color-white); padding: 20rpx 32rpx; border-bottom: 1rpx solid var(--color-border-light); }
 .tab-list { display: inline-flex; gap: 8rpx; }

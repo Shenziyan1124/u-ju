@@ -106,7 +106,7 @@ loadCert()
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); padding-bottom: 40rpx; }
+.page { min-height: 100%; background: var(--color-bg); padding-bottom: 40rpx; }
 .section-title { padding: 28rpx 32rpx; font-size: 30rpx; font-weight: 700; color: var(--color-text-1); }
 
 .status-card {

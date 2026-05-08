@@ -78,7 +78,7 @@ const doSearch = async () => {
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); }
+.page { min-height: 100%; background: var(--color-bg); }
 
 .search-header { display: flex; align-items: center; gap: 20rpx; padding: 24rpx 32rpx; background: var(--color-white); }
 .search-input { flex: 1; display: flex; align-items: center; gap: 12rpx; padding: 18rpx 24rpx; background: var(--color-fill); border-radius: var(--radius-xl); }

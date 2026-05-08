@@ -98,7 +98,7 @@ onShow(() => {})
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); }
+.page { min-height: 100%; background: var(--color-bg); }
 
 .search-header {
   display: flex; align-items: center; gap: 20rpx;

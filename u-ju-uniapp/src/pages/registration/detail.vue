@@ -84,7 +84,7 @@ onShow(loadDetail)
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); padding-bottom: 40rpx; }
+.page { min-height: 100%; background: var(--color-bg); padding-bottom: 40rpx; }
 .section-title { padding: 28rpx 32rpx; font-size: 30rpx; font-weight: 700; color: var(--color-text-1); }
 
 .card { margin: 0 32rpx; background: var(--color-white); border-radius: var(--radius-lg); padding: 32rpx; border: 1rpx solid var(--color-border-light); }

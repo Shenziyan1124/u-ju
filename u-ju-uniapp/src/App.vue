@@ -9,6 +9,9 @@ export default {
 
 <style>
 page {
+  height: 100%;
+  overflow-y: auto;
+
   --color-primary: #1677ff;
   --color-primary-light: #4096ff;
   --color-primary-bg: #e6f4ff;

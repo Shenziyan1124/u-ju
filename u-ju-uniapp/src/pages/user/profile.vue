@@ -47,7 +47,7 @@ const goChangePwd = () => uni.navigateTo({ url: '/pages/user/settings?mode=pwd' 
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); }
+.page { min-height: 100%; background: var(--color-bg); }
 
 .header {
   display: flex; flex-direction: column; align-items: center; gap: 16rpx;

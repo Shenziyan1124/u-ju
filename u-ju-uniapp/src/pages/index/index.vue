@@ -90,7 +90,7 @@ onMounted(loadEvents)
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); }
+.page { min-height: 100%; background: var(--color-bg); }
 
 .hero {
   background: #1677ff;

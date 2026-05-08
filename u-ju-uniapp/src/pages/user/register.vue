@@ -44,7 +44,7 @@ const goLogin = () => uni.redirectTo({ url: '/pages/user/login' })
 </script>
 
 <style scoped>
-.page { min-height: 100vh; background: var(--color-bg); padding-top: env(safe-area-inset-top); }
+.page { min-height: 100%; background: var(--color-bg); padding-top: env(safe-area-inset-top); }
 
 .header { padding: 80rpx 40rpx 48rpx; }
 .title { display: block; font-size: 44rpx; font-weight: 800; color: var(--color-text-1); }
