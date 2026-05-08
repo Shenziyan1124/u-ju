@@ -1,0 +1,21 @@
+{
+  "name": "U Ju",
+  "appid": "",
+  "description": "U Ju 活动管理平台",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "h5": {
+    "title": "U Ju 活动管理平台",
+    "router": {
+      "mode": "history"
+    }
+  },
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false
+    },
+    "usingComponents": true
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "project": "U Ju 活动管理平台",
+  "version": "1.0",
+  "tasks": [
+    {
+      "id": "T001",
+      "title": "后端项目初始化与公共组件",
+      "description": "创建Spring Boot项目骨架，配置依赖、公共组件（Result、BusinessException、GlobalExceptionHandler、JwtUtil）、配置类（SecurityConfig、MyBatisPlusConfig、WebMvcConfig、OpenApiConfig）",
+      "priority": "P0",
+      "dependencies": [],
+      "module": "backend",
+      "estimated_files": 12
+    },
+    {
+      "id": "T002",
+      "title": "数据库初始化脚本",
+      "description": "创建8张核心表的DDL脚本（users, organizer_certifications, events, tickets, registrations, orders, favorites, notifications）",
+      "priority": "P0",
+      "dependencies": [],
+      "module": "backend",
+      "estimated_files": 1
+    },
+    {
+      "id": "T003",
+      "title": "用户模块（后端）",
+      "description": "实现用户注册、登录、个人信息管理、头像上传功能。包含User实体、UserMapper、UserService、UserController、DTO/VO",
+      "priority": "P0",
+      "dependencies": ["T001", "T002"],
+      "module": "backend",
+      "estimated_files": 8
+    },
+    {
+      "id": "T004",
+      "title": "企业认证模块（后端）",
+      "description": "实现企业认证提交、查看认证状态功能。包含OrganizerCertification实体、Mapper、Service、Controller",
+      "priority": "P1",
+      "dependencies": ["T003"],
+      "module": "backend",
+      "estimated_files": 5
+    },
+    {
+      "id": "T005",
+      "title": "活动模块（后端）",
+      "description": "实现活动CRUD、状态管理、收藏功能。包含Event、Ticket实体、Mapper、Service、Controller",
+      "priority": "P0",
+      "dependencies": ["T003"],
+      "module": "backend",
+      "estimated_files": 8
+    },
+    {
+      "id": "T006",
+      "title": "报名模块（后端）",
+      "description": "实现活动报名、取消报名、报名审核功能。包含Registration实体、Mapper、Service、Controller",
+      "priority": "P0",
+      "dependencies": ["T005"],
+      "module": "backend",
+      "estimated_files": 5
+    },
+    {
+      "id": "T007",
+      "title": "订单模块（后端）",
+      "description": "实现订单创建、支付、取消、退款功能。包含Order实体、Mapper、Service、Controller",
+      "priority": "P0",
+      "dependencies": ["T006"],
+      "module": "backend",
+      "estimated_files": 5
+    },
+    {
+      "id": "T008",
+      "title": "通知模块（后端）",
+      "description": "实现通知列表、未读计数、标记已读功能。包含Notification实体、Mapper、Service、Controller",
+      "priority": "P1",
+      "dependencies": ["T003"],
+      "module": "backend",
+      "estimated_files": 5
+    },
+    {
+      "id": "T009",
+      "title": "管理模块（后端）",
+      "description": "实现管理员登录、数据概览、用户管理、认证审核、活动管理、订单管理功能。包含AdminService、AdminController",
+      "priority": "P0",
+      "dependencies": ["T003", "T004", "T005", "T007"],
+      "module": "backend",
+      "estimated_files": 4
+    },
+    {
+      "id": "T010",
+      "title": "文件上传模块（后端）",
+      "description": "实现文件上传功能，支持本地存储和阿里云OSS",
+      "priority": "P0",
+      "dependencies": ["T001"],
+      "module": "backend",
+      "estimated_files": 2
+    },
+    {
+      "id": "T011",
+      "title": "Vue3 Admin 项目初始化",
+      "description": "创建Vue3+Element Plus+TypeScript项目，配置Vite、路由、Pinia、Axios封装、布局组件",
+      "priority": "P0",
+      "dependencies": [],
+      "module": "admin",
+      "estimated_files": 10
+    },
+    {
+      "id": "T012",
+      "title": "Admin 登录与布局页面",
+      "description": "实现管理员登录页面、主布局（侧边栏+顶栏+内容区）、仪表盘页面",
+      "priority": "P0",
+      "dependencies": ["T011"],
+      "module": "admin",
+      "estimated_files": 6
+    },
+    {
+      "id": "T013",
+      "title": "Admin 用户管理与认证审核",
+      "description": "实现用户列表页面、认证审核页面",
+      "priority": "P0",
+      "dependencies": ["T012"],
+      "module": "admin",
+      "estimated_files": 4
+    },
+    {
+      "id": "T014",
+      "title": "Admin 活动管理与订单管理",
+      "description": "实现活动管理页面、订单管理页面、系统设置页面",
+      "priority": "P0",
+      "dependencies": ["T012"],
+      "module": "admin",
+      "estimated_files": 6
+    },
+    {
+      "id": "T015",
+      "title": "UniApp 项目初始化",
+      "description": "创建UniApp(Vue3)项目，配置pages.json、manifest.json、请求封装、Pinia、公共组件",
+      "priority": "P0",
+      "dependencies": [],
+      "module": "uniapp",
+      "estimated_files": 8
+    },
+    {
+      "id": "T016",
+      "title": "UniApp 首页与活动浏览",
+      "description": "实现首页（推荐/热门/最新）、活动列表页、活动详情页、搜索页",
+      "priority": "P0",
+      "dependencies": ["T015"],
+      "module": "uniapp",
+      "estimated_files": 8
+    },
+    {
+      "id": "T017",
+      "title": "UniApp 用户模块",
+      "description": "实现登录页、注册页、个人中心、个人资料编辑、设置页",
+      "priority": "P0",
+      "dependencies": ["T015"],
+      "module": "uniapp",
+      "estimated_files": 8
+    },
+    {
+      "id": "T018",
+      "title": "UniApp 报名与订单",
+      "description": "实现报名表单、订单确认、支付页面、我的报名、我的订单、报名详情（电子票）",
+      "priority": "P0",
+      "dependencies": ["T016", "T017"],
+      "module": "uniapp",
+      "estimated_files": 10
+    },
+    {
+      "id": "T019",
+      "title": "UniApp 发布者功能",
+      "description": "实现企业认证申请、活动发布、我的活动管理、报名管理页面",
+      "priority": "P1",
+      "dependencies": ["T017"],
+      "module": "uniapp",
+      "estimated_files": 8
+    },
+    {
+      "id": "T020",
+      "title": "UniApp 收藏与通知",
+      "description": "实现我的收藏、我的消息页面",
+      "priority": "P1",
+      "dependencies": ["T017"],
+      "module": "uniapp",
+      "estimated_files": 4
+    }
+  ],
+  "execution_order": [
+    ["T001", "T002", "T011", "T015"],
+    ["T003", "T010", "T012", "T016", "T017"],
+    ["T004", "T005", "T008", "T013", "T014", "T018", "T019", "T020"],
+    ["T006"],
+    ["T007"],
+    ["T009"]
+  ]
+}

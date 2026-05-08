@@ -1,0 +1,95 @@
+tech_stack:
+  backend:
+    language: java
+    version: "17"
+    framework: spring-boot
+    framework_version: "3.2.5"
+    orm: mybatis-plus
+    orm_version: "3.5.6"
+    security: spring-security
+    jwt: jjwt
+    jwt_version: "0.12.5"
+    api_docs: knife4j
+    api_docs_version: "4.4.0"
+    utilities: hutool
+    utilities_version: "5.8.26"
+    database: mysql
+    database_version: "8.0"
+    cache: redis
+
+  frontend_admin:
+    framework: vue3
+    framework_version: "3.4"
+    ui_library: element-plus
+    ui_library_version: "2.7"
+    build_tool: vite
+    build_tool_version: "5.x"
+    state_management: pinia
+    state_management_version: "2.x"
+    http_client: axios
+    language: typescript
+
+  frontend_uniapp:
+    framework: uniapp
+    framework_version: "3.x"
+    base_framework: vue3
+    targets:
+      - weixin-miniprogram
+      - h5
+    state_management: pinia
+
+  project_structure:
+    entry_files:
+      - u-ju-server/src/main/java/com/uju/platform/UjuPlatformApplication.java
+      - u-ju-admin/index.html
+      - u-ju-admin/src/main.ts
+      - u-ju-admin/vite.config.ts
+      - u-ju-uniapp/src/main.ts
+      - u-ju-uniapp/manifest.json
+      - u-ju-uniapp/pages.json
+
+    config_files:
+      - u-ju-server/pom.xml
+      - u-ju-server/src/main/resources/application.yml
+      - u-ju-admin/package.json
+      - u-ju-admin/tsconfig.json
+      - u-ju-admin/vite.config.ts
+      - u-ju-uniapp/package.json
+      - u-ju-uniapp/vite.config.ts
+      - u-ju-uniapp/manifest.json
+      - u-ju-uniapp/pages.json
+
+    required_dependencies:
+      backend:
+        - spring-boot-starter-web
+        - spring-boot-starter-security
+        - spring-boot-starter-data-redis
+        - mybatis-plus-spring-boot3-starter
+        - mysql-connector-j
+        - jjwt-api
+        - jjwt-impl
+        - jjwt-jackson
+        - knife4j-openapi3-jakarta-spring-boot-starter
+        - hutool-all
+        - lombok
+      frontend_admin:
+        - vue
+        - vue-router
+        - pinia
+        - element-plus
+        - "@element-plus/icons-vue"
+        - axios
+        - dayjs
+        - "@vitejs/plugin-vue"
+        - typescript
+        - vite
+        - vue-tsc
+        - unplugin-auto-import
+        - unplugin-vue-components
+        - sass
+      frontend_uniapp:
+        - vue
+        - pinia
+        - "@dcloudio/uni-app"
+        - "@dcloudio/uni-app-plus"
+        - "@dcloudio/vite-plugin-uni"
